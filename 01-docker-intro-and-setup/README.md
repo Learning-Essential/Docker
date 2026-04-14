@@ -83,12 +83,14 @@ Open your web browser and go to: http://localhost:8080. You will see a "Welcome 
 ---
 
 ## 5. 📖 The Docker Dictionary (Vocabulary)
-- Term	  Easy Definition
-- Image	A "Snapshot" or "Blueprint." It’s a read-only file with instructions to build a container.
-- Container	A "Living Instance." If the Image is a recipe, the Container is the cake you baked.
-- Docker Hub	The "App Store" for Docker. A library where you download pre-made images.
-- Volume	A "Persistent Hard Drive." Saves data on your PC so it isn't deleted with the container.
-- Daemon	The "Brain." The background service that manages everything for you.
+
+Term	       Easy Definition
+
+Image	       A "Snapshot" or "Blueprint." It’s a read-only file with instructions to build a container.
+Container	   A "Living Instance." If the Image is a recipe, the Container is the cake you baked.
+Docker Hub	   The "App Store" for Docker. A library where you download pre-made images.
+Volume	       A "Persistent Hard Drive." Saves data on your PC so it isn't deleted with the container.
+Daemon	       The "Brain." The background service that manages everything for you.
 
 ---
 
@@ -98,3 +100,5 @@ Cannot connect to Daemon	Your Docker app is off. Open Docker Desktop.
 Port already allocated	Another app is using that port. Change 8080 to 9090 in your command.
 Filename too long (Git)	Run git config core.longpaths true in your terminal.
 Permission Denied (Linux)	Try running the command with sudo.
+
+
