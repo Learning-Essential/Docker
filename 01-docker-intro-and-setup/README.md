@@ -54,9 +54,47 @@ sudo apt-get install docker.io -y
 sudo systemctl start docker
 sudo systemctl enable docker
 
+```
 ---
 
 ## 4. Basic Demo: Your First Container
 Let’s see it in action without writing any code. We will pull a "Welcome" website from the internet and run it.
-Step 1: Run the command
+
+### Step 1: Run the command
 Open your terminal and type:
+
+```
+docker run -d -p 8080:80 nginx
+```
+---
+
+### Step 2: What just happened? (The Breakdown)
+* **docker run:** The command to start a container.
+* **-d:** Detached mode. It runs in the background so it doesn't "lock" your terminal.
+* **-p 8080:80:** Port Mapping. It connects your PC's port 8080 to the container's port 80.
+* **nginx:** The name of the image (a famous web server).
+
+---
+
+### Step 3: See the Result
+Open your web browser and go to: http://localhost:8080. You will see a "Welcome to nginx!" page.
+
+
+---
+
+## 5. 📖 The Docker Dictionary (Vocabulary)
+Term	Easy Definition
+Image	A "Snapshot" or "Blueprint." It’s a read-only file with instructions to build a container.
+Container	A "Living Instance." If the Image is a recipe, the Container is the cake you baked.
+Docker Hub	The "App Store" for Docker. A library where you download pre-made images.
+Volume	A "Persistent Hard Drive." Saves data on your PC so it isn't deleted with the container.
+Daemon	The "Brain." The background service that manages everything for you.
+
+---
+
+## 6. 🛠️ Troubleshooting Cheat Sheet
+Error	The "Easy Fix"
+Cannot connect to Daemon	Your Docker app is off. Open Docker Desktop.
+Port already allocated	Another app is using that port. Change 8080 to 9090 in your command.
+Filename too long (Git)	Run git config core.longpaths true in your terminal.
+Permission Denied (Linux)	Try running the command with sudo.
