@@ -31,4 +31,19 @@ Stuck? Check these common fixes:
 3. **Practice**: Copy the code snippets and try them in your own terminal!
 
 ---
+
+
+
+## ⚠️ Docker Usage Disclaimer
+
+The information and scripts provided in this repository are for **educational and testing purposes only**. 
+
+
+* **Trademarks:** "Docker" and the Docker logo are trademarks or registered trademarks of Docker, Inc. in the United States and/or other countries.
+* **No Affiliation:** This project is an independent community resource and is not an official product of Docker, Inc.
+* **No Liability:** The Dockerfiles and configurations provided here are for educational and lab purposes. I am not responsible for any security vulnerabilities, data loss, hardware damage, system downtime resulting from the use of these guides or infrastructure costs incurred through the use of these containers.
+* **Licensing:** Users are responsible for ensuring that any images pulled (e.g., from Docker Hub) comply with the respective software licenses of the creators.
+*   **Use at your own risk:** Always test configurations in a non-production environment first.
+*   **Backups:** Ensure you have full backups of your environment before attempting any real-world projects or troubleshooting steps.
+  
 *Happy Dockering!* 🐳✨
